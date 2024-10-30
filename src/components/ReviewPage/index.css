@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .top-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .left{
+    overflow: hidden;
+  }
+  
+  .left, .right {
+    flex: 1 1 300px;
+    margin: 20px;
+  }
+  
+  .left img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .left p {
+    text-align: left;
+    margin: 10px 0;
+  }
+  
+  .right {
+    text-align: left;
+  }
+  .right h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  .right h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+  }
+  .right span{
+    font-size: 18px;
+  }
+  .steps-header {
+    background-color: turquoise;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .steps-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .steps-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .steps-list li.completed {
+    color: green;
+    text-decoration: line-through;
+  }
+  
+  @media (max-width: 768px) {
+    .left, .right {
+      flex: 1 1 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  .bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: turquoise;
+  }
+  
+  .date-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .date-filter input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .date-filter button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: turquoise;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 45%;
+    min-width: 300px;
+  }
+  
+  .card h2 {
+    background-color: turquoise;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px 4px 0 0;
+    margin: -20px -20px 20px -20px;
+  }
+  
+  .card-content {
+    padding: 10px;
+    text-align: center;
+  }
+  .card-border{
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  .card-content-bg{
+    margin-top: 0;
+    padding-top: 5px;
+    background-color: #00000033;
+    height: 30px;
+  }
+  .card-content-sales-list{
+    text-align: left;
+  }
+  .summary .card-content,
+  .current-orders .card-content,
+  .top-products .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sales-chart .card-content {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .card {
+      flex: 1 1 100%;
+    }
+    .card-content-sales-list{
+      flex-wrap: wrap;
+    }
+  }
+  

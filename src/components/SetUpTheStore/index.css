@@ -1,0 +1,141 @@
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px;
+  }
+  .main-heading {
+    color: #0056b3;
+  }
+  .sub-heading {
+    color: #0056b3;
+  }
+  .sub-container {
+    display: flex;
+  }
+  .left-container {
+    overflow: scroll;
+    height: 400px;
+  }
+  .right {
+    padding: 10px;
+  }
+  .image-containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-group p {
+    font-size: 12px;
+    font-style: italic;
+    color: #6c757d;
+  }
+  /* .check-and-label {
+    display: flex;
+    align-items: center;
+    width: 30%;
+  }
+  .check-and-label input {
+   width: 100%;
+  } */
+  .header {
+    background-color: #e6f7ff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .form-group input[type="file"] {
+    margin-top: 10px;
+  }
+  .form-group input[type="checkbox"] {
+    display: inline;
+    width: 5%;
+  }
+  .form-group label {
+    display: inline;
+  }
+  .form-group img {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  .support-form-group{
+    margin-top: 20px;
+  }
+  .support-form-group input[type="text"], [type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .right {
+    border-left: 1px solid #ccc;
+    text-align: center;
+  }
+  .right .info {
+    margin-top: 20px;
+  }
+  .image-title {
+    display: flex;
+  }
+  .store-and-title{
+    margin-left: 10px;
+  }
+  .contact-gc {
+    display: flex;
+    align-items: center;
+  }
+  .buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .buttons button {
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 10px;
+  }
+  .buttons button:hover {
+    background-color: #0056b3;
+  }
+  .buttons button.back {
+    background-color: #6c757d;
+  }
+  .buttons button.back:hover {
+    background-color: #565e64;
+  }
+  
+  @media (max-width: 768px) {
+    .main-container {
+      flex: 1 1 100%;
+      overflow: hidden;
+    }
+    .image-containers{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

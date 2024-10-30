@@ -1,0 +1,198 @@
+.add-prod-container {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 20px;
+    padding: 20px;
+  }
+  .main-heading{
+    color: #0056b3;
+  }
+  .sub-heading{
+    color: #0056b3;
+  }
+  .sub-container{
+    display: flex;
+    text-align: left;
+  }
+  .left-container{
+    width: 55%;
+    overflow: scroll;
+    height: 500px;
+    padding: 10px;
+  }
+  .header {
+    background-color: #e6f7ff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+  }
+  .title-lableName{
+    display: flex;
+    flex-direction: column;
+  }
+  .label-name{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .input-container{
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .text-editor {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .toolbar {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .toolbar button,
+  .toolbar select {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .toolbar input {
+    width: 100px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .editor {
+    padding: 10px;
+    min-height: 150px;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+  }
+  .check-label{
+    display: flex;
+    align-items: center;
+  }
+  
+  .preview-section {
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    max-width: 100%;
+  }
+  
+  .preview-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+  }
+  .product-details {
+    margin-top: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+  }
+  .prod-desc{
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+  }
+  .buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .buttons button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 10px;
+  }
+  .buttons button:hover {
+    background-color: #0056b3;
+  }
+  .buttons button.back {
+    background-color: #6c757d;
+  }
+  .buttons button.back:hover {
+    background-color: #565e64;
+  }
+  
+  
+  
+  .container-pricing {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .pricing-form-group {
+    flex: 1 1 45%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .pricing-form-group input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .include-gst{
+    display: flex;
+    text-decoration: line-through;
+  }
+  @media (max-width: 600px) {
+    .form-group {
+      flex: 1 1 100%;
+    }
+  }
+  
